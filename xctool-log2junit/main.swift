@@ -94,7 +94,7 @@ for result in results {
     fullXMLResult = fullXMLResult + "\n\t\t</system-out>"
     fullXMLResult = fullXMLResult + "\n\t</testcase>"
 }
-fullXMLResult = fullXMLResult + "\n</testsuites\n"
+fullXMLResult = fullXMLResult + "\n</testsuites>\n"
 
 let path = outputFilepath
 fullXMLResult.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding)
