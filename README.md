@@ -15,8 +15,8 @@
 Conclusion : I don't want to use xctool in my projects
 
 ##This work is base on :
-- xcodebuild to run the test
-- And a little parsing implementation to parse the output (Swift)
+- xcodebuild to execute target linked tests
+- xctool-log2junit : a little parsing implementation to parse the output (Swift)
 
 ##Sonar integration 
 Change run.sonar.sh script or use [my updated version](./run-sonar.sh).
