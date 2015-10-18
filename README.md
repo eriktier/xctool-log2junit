@@ -2,19 +2,21 @@
 
 ##Why this project ?
 
-Before that i need to explain why [xctool](https://github.com/facebook/xctool)  was my favorites companion to execute my unit tests.
+[xctool](https://github.com/facebook/xctool) was my favorites companion to execute my unit tests because of the unit test reporter abstraction (the result output is a Junit format XML)
 
-- Only because of the unit test reporter abstraction (the result output is a Junit format XML)
+##Why i want to change that ? 
 
-Why i want to change that ? 
-
-- xctool is to big ... a lot of classes to finaly just a xcodebuild wrapper ?
+- xctool is too big ... a lot of classes to finaly just a xcodebuild wrapper?
 - my unit tests are well excecuted on my computer with xctool but failed on my continuous integration servers ...
+- my unit tests are well excecuted on my computer with Xcode and my continuous integration servers too.
 - my unit tests are well excecuted on my computer with xcodebuild and my continuous integration servers too.
-- My dream what to use xcodebuild and generate a Junit formated results
+- Test did not run: the test bundle stopped running or crashed before the test suite started.... WTF !!! i don't want to see that message !
 
-I don't want to use xctool in my projects. 
+Conclusion : I don't want to use xctool in my projects
 
+##This work is base on :
+- xcodebuild to run the test
+- And a little parsing implementation to parse the output (Swift)
 
 ##Sonar integration 
 Change run.sonar.sh script or use [my updated version](./run-sonar.sh).
