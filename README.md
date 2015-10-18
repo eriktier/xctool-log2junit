@@ -24,15 +24,11 @@ Change run.sonar.sh script or use [my updated version](./run-sonar.sh).
 **This**
 ```
 testIsInstalled xctool
-testIsInstalled gcovr
-testIsInstalled oclint
 ```
 
 **By this**
 ```
 testIsInstalled xctool-log2junit
-testIsInstalled gcovr
-testIsInstalled oclint
 ```
 
 ---
